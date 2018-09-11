@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Webcame.jnlp">
+  <information>
+    <title>Webcame</title>
+    <vendor>arun</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path=/home/arun/Downloads/OpenCV/build/lib "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Webcame.jar" size="17346" download="eager" />
+    <jar href="lib/opencv-343.jar" size="463382" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Webcame" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="webcame.Webcame"  name="Webcame" />
+  <update check="always"/>
+</jnlp>
